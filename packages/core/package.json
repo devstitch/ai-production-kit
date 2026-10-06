@@ -1,0 +1,35 @@
+{
+  "name": "@devstitch/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch --preserveWatchOutput",
+    "lint": "eslint .",
+    "test": "tsc -p tsconfig.json && node --experimental-strip-types --test test/define-feature.test.ts test/runtime.test.ts test/governance.test.ts test/privacy.test.ts"
+  },
+  "dependencies": {
+    "zod": "catalog:",
+    "@devstitch/model-router": "workspace:*",
+    "@devstitch/policies": "workspace:*",
+    "@devstitch/prompts": "workspace:*",
+    "@devstitch/reliability": "workspace:*",
+    "@devstitch/telemetry": "workspace:*",
+    "@devstitch/usage": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^10.11.0",
+    "typescript": "^6.0.3",
+    "@types/node": "^26.6.3"
+  }
+}

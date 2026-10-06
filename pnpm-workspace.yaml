@@ -1,0 +1,7 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+  - "examples/*"
+
+catalog:
+  zod: ^4.6.5
