@@ -145,4 +145,4 @@ See `CONTRIBUTING.md`. `pnpm test` must pass without provider API keys.
 
 DevStitch is an AI-native product engineering company helping founders build, productionize and scale SaaS products, platforms and mobile applications. We work across product engineering, production hardening, AI features, integrations and automation.
 
-[DevStitch](https://devstitch.example)
+[DevStitch](https://devstitch.com)
